@@ -3,7 +3,8 @@ import { VaultOverview } from "@/components/VaultOverview";
 import { UserPosition } from "@/components/UserPosition";
 import { DepositWithdraw } from "@/components/DepositWithdraw";
 import { ActivityLog } from "@/components/ActivityLog";
-import { Info, BookOpen, Shield, Twitter, MessageCircle, Github, FileText, Lock, FileCheck, HelpCircle, Headphones, Newspaper } from "lucide-react";
+import { LayoutDashboard, TrendingUp, Vote, BookOpen, Twitter, MessageCircle, Github, Shield, FileText, Lock } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -44,16 +45,19 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 mt-20">
         <div className="container mx-auto px-4 lg:px-8 py-8">
-          <div className="flex justify-center items-center gap-8 mb-6">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="About">
-              <Info className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Documentation">
+          <div className="flex justify-center items-center gap-6 mb-6">
+            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors" title="Dashboard">
+              <LayoutDashboard className="w-5 h-5" />
+            </Link>
+            <Link to="/analytics" className="text-muted-foreground hover:text-primary transition-colors" title="Analytics">
+              <TrendingUp className="w-5 h-5" />
+            </Link>
+            <Link to="/governance" className="text-muted-foreground hover:text-primary transition-colors" title="Governance">
+              <Vote className="w-5 h-5" />
+            </Link>
+            <Link to="/docs" className="text-muted-foreground hover:text-primary transition-colors" title="Docs">
               <BookOpen className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Security">
-              <Shield className="w-5 h-5" />
-            </a>
+            </Link>
             <span className="text-border">|</span>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Twitter">
               <Twitter className="w-5 h-5" />
@@ -65,24 +69,14 @@ const Index = () => {
               <Github className="w-5 h-5" />
             </a>
             <span className="text-border">|</span>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Security">
+              <Shield className="w-5 h-5" />
+            </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Terms">
               <FileText className="w-5 h-5" />
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Privacy">
               <Lock className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Audits">
-              <FileCheck className="w-5 h-5" />
-            </a>
-            <span className="text-border">|</span>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="FAQ">
-              <HelpCircle className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Support">
-              <Headphones className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Blog">
-              <Newspaper className="w-5 h-5" />
             </a>
           </div>
           <div className="text-center text-sm text-muted-foreground">
