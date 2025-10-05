@@ -5,6 +5,7 @@ import { DepositWithdraw } from "@/components/DepositWithdraw";
 import { ActivityLog } from "@/components/ActivityLog";
 import { LayoutDashboard, TrendingUp, Vote, BookOpen, Twitter, MessageCircle, Github, Shield, FileText, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -78,6 +79,8 @@ const Index = () => {
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Privacy">
               <Lock className="w-5 h-5" />
             </a>
+            <span className="text-border">|</span>
+            <ThemeToggle />
           </div>
           <div className="text-center text-sm text-muted-foreground">
             <p>© 2025 AegisYield. DeFi investments carry risk. Please DYOR.</p>
