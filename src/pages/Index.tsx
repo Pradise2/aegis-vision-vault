@@ -3,6 +3,7 @@ import { VaultOverview } from "@/components/VaultOverview";
 import { UserPosition } from "@/components/UserPosition";
 import { DepositWithdraw } from "@/components/DepositWithdraw";
 import { ActivityLog } from "@/components/ActivityLog";
+import { Info, BookOpen, Shield, Twitter, MessageCircle, Github, FileText, Lock, FileCheck, HelpCircle, Headphones, Newspaper } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -43,41 +44,48 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 mt-20">
         <div className="container mx-auto px-4 lg:px-8 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h4 className="font-semibold mb-3">Product</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Docs</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Security</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-3">Community</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Twitter</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Discord</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">GitHub</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-3">Legal</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Terms</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Audits</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-3">Resources</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Support</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Blog</a></li>
-              </ul>
-            </div>
+          <div className="flex justify-center items-center gap-8 mb-6">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="About">
+              <Info className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Documentation">
+              <BookOpen className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Security">
+              <Shield className="w-5 h-5" />
+            </a>
+            <span className="text-border">|</span>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Twitter">
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Discord">
+              <MessageCircle className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="GitHub">
+              <Github className="w-5 h-5" />
+            </a>
+            <span className="text-border">|</span>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Terms">
+              <FileText className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Privacy">
+              <Lock className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Audits">
+              <FileCheck className="w-5 h-5" />
+            </a>
+            <span className="text-border">|</span>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="FAQ">
+              <HelpCircle className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Support">
+              <Headphones className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Blog">
+              <Newspaper className="w-5 h-5" />
+            </a>
           </div>
-          <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
+          <div className="text-center text-sm text-muted-foreground">
             <p>© 2025 AegisYield. DeFi investments carry risk. Please DYOR.</p>
           </div>
         </div>
