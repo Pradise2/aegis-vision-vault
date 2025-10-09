@@ -8,6 +8,7 @@ import Analytics from "./pages/Analytics";
 import Governance from "./pages/Governance";
 import Docs from "./pages/Docs";
 import NotFound from "./pages/NotFound";
+import Repository from "./pages/Repository"; // Import the new page
 import { ThemeProvider } from "next-themes";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/governance" element={<Governance />} />
             <Route path="/docs" element={<Docs />} />
+            <Route path="/repository" element={<Repository />} /> {/* Add the new route */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
