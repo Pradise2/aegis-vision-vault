@@ -1,6 +1,4 @@
 
-This README is designed to replace the generic one from the template, providing a clear and detailed overview of your specific application, **AegisYield**.
-
 ---
 
 # AegisYield: AI-Powered DeFi Vault 🛡️📈
