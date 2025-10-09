@@ -3,7 +3,7 @@ import { VaultOverview } from "@/components/VaultOverview";
 import { UserPosition } from "@/components/UserPosition";
 import { DepositWithdraw } from "@/components/DepositWithdraw";
 import { ActivityLog } from "@/components/ActivityLog";
-import { LayoutDashboard, TrendingUp, Vote } from "lucide-react";
+import { LayoutDashboard, TrendingUp, Vote, Code } from "lucide-react"; // Import Code icon
 import { Link } from "react-router-dom";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -57,6 +57,10 @@ const Index = () => {
             <Vote className="w-6 h-6" />
             <span className="text-xs">Governance</span>
           </Link>
+          <Link to="/repository" className="flex flex-col items-center justify-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+            <Code className="w-6 h-6" />
+            <span className="text-xs">Code</span>
+          </Link>
         </div>
       </nav>
 
@@ -75,6 +79,10 @@ const Index = () => {
             <Link to="/governance" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Vote className="w-5 h-5" />
               <span>Governance</span>
+            </Link>
+            <Link to="/repository" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+              <Code className="w-5 h-5" />
+              <span>Code</span>
             </Link>
           </div>
           <div className="text-center text-sm text-muted-foreground">
