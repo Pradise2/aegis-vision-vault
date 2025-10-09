@@ -46,40 +46,47 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border/50 mt-20">
         <div className="container mx-auto px-4 lg:px-8 py-8">
-          <div className="flex justify-center items-center gap-6 mb-6">
-            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors" title="Dashboard">
+          <div className="flex justify-center items-center flex-wrap gap-6 mb-6">
+            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <LayoutDashboard className="w-5 h-5" />
+              <span>Dashboard</span>
             </Link>
-            <Link to="/analytics" className="text-muted-foreground hover:text-primary transition-colors" title="Analytics">
+            <Link to="/analytics" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <TrendingUp className="w-5 h-5" />
+              <span>Analytics</span>
             </Link>
-            <Link to="/governance" className="text-muted-foreground hover:text-primary transition-colors" title="Governance">
+            <Link to="/governance" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Vote className="w-5 h-5" />
+              <span>Governance</span>
             </Link>
-            <Link to="/docs" className="text-muted-foreground hover:text-primary transition-colors" title="Docs">
+            <Link to="/docs" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <BookOpen className="w-5 h-5" />
+              <span>Docs</span>
             </Link>
-            <span className="text-border">|</span>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Twitter">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Twitter className="w-5 h-5" />
+              <span>Twitter</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Discord">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <MessageCircle className="w-5 h-5" />
+              <span>Discord</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="GitHub">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Github className="w-5 h-5" />
+              <span>GitHub</span>
             </a>
-            <span className="text-border">|</span>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Security">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Shield className="w-5 h-5" />
+              <span>Security</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Terms">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <FileText className="w-5 h-5" />
+              <span>Terms</span>
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" title="Privacy">
+            <a href="#" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
               <Lock className="w-5 h-5" />
+              <span>Privacy</span>
             </a>
-            <span className="text-border">|</span>
             <ThemeToggle />
           </div>
           <div className="text-center text-sm text-muted-foreground">
