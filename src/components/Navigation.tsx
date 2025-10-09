@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Wallet, Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Navigation = () => {
   const location = useLocation();
@@ -56,7 +57,7 @@ export const Navigation = () => {
             ))}
           </div>
 
-          {/* Wallet Connection */}
+          {/* Wallet Connection & Theme Toggle */}
           <div className="flex items-center gap-4">
             {isWalletConnected ? (
               <Button
@@ -76,6 +77,8 @@ export const Navigation = () => {
                 <span>Connect Wallet</span>
               </Button>
             )}
+
+            <ThemeToggle />
 
             {/* Mobile Menu Toggle */}
             <Button

@@ -5,7 +5,6 @@ import { DepositWithdraw } from "@/components/DepositWithdraw";
 import { ActivityLog } from "@/components/ActivityLog";
 import { LayoutDashboard, TrendingUp, Vote } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
@@ -58,10 +57,6 @@ const Index = () => {
             <Vote className="w-6 h-6" />
             <span className="text-xs">Governance</span>
           </Link>
-          <div className="flex flex-col items-center justify-center gap-1">
-             <ThemeToggle />
-             <span className="text-xs">Theme</span>
-          </div>
         </div>
       </nav>
 
@@ -81,7 +76,6 @@ const Index = () => {
               <Vote className="w-5 h-5" />
               <span>Governance</span>
             </Link>
-            <ThemeToggle />
           </div>
           <div className="text-center text-sm text-muted-foreground">
             <p>© 2025 AegisYield. DeFi investments carry risk. Please DYOR.</p>
